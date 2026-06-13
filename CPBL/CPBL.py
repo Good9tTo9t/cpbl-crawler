@@ -1,7 +1,7 @@
 from collections import OrderedDict
 from requests_html import HTMLSession
 from bs4 import BeautifulSoup
-from CPBL import datatype
+import datatype
 import xmltodict
 import urllib3
 import itertools
