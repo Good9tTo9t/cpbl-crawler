@@ -176,7 +176,7 @@ def get_homerun_detail(player_id) -> dict:
     for i in player_id_list:
         res = ses.get(datatype.root+'/team/hr?Acnt=' + i, verify=False)
         data = []
-        raw_data = BeautifulSoup(res.text)
+        raw_data = BeautifulSoup(res.text, features="lxml")
         key_data = raw_data.find('div', {"class": 'RecordTable'})
         for rw in key_data.find_all('tr')[1:]:
             vals = [val.text for val in rw.find_all('td')]
