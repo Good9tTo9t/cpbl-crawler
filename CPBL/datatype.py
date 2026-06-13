@@ -5,7 +5,8 @@ team_code = {
     'ADD': '統一7-ELEVEn獅',
     'AJL': '樂天桃猿',
     'AEO': '富邦悍將',
-    'AAA': '味全龍'
+    'AAA': '味全龍',
+    'AKP': '台鋼雄鷹'
 }
 
 league_code = {
